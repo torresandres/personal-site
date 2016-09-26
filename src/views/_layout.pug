@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='description', content=description)
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=0.5 maximum-scale=1.0 minimal-ui')
+		title= title
+
+		//- Stylesheets
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato:300,400,700')
+		link(rel='stylesheet', href='/assets/css/vendor.css')
+		link(rel='stylesheet', href='/assets/css/styles.css')
+
+	body(class=section)
+
+		//- Navigation
+		include ./partials/_header.pug
+
+		//- Content
+		block content
+
+		//- Footer
+		//- include ./components/layout/footer.jade
+
+		//- Scripts
+		script(src='/assets/js/vendor.js')
+		script(src='/assets/js/main.js')
